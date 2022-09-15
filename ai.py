@@ -69,9 +69,6 @@ try:
                 #print(responce['FaceDetails'][0]['Emotions'][i]['Type'])
                 emotion=responce['FaceDetails'][0]['Emotions'][i]['Type']
                 emotion=emotion.lower()
-                n = random.random()
-                nameofimagefordb=emotion+"{}.jpg".format(n)
-                s3.Object("image6388",nameofimagefordb).upload_file(Filename='./something.jpg') 
                 break
             i=i+1
 
